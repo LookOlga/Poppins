@@ -1,0 +1,38 @@
+.quick-contacts {
+    margin-top: 8rem;
+    &__links{
+        margin-top: 2rem;
+    }
+    &__link {
+        display: flex;
+        margin-top: 1rem;
+        p {
+            font-weight: 600;
+            width: 30%;
+        }
+    }
+    &__tel, &__addr {
+        width: 70%;
+    }
+
+    &__tel {
+        color: #212121;
+    }
+    &__addr {
+        font-style: normal;
+    }
+    &__button {
+        border: 0.2rem solid #212121;
+        padding: 1rem;
+        cursor: pointer;
+        margin-top: 3rem;
+        line-height: 1;
+        font-size: 1.6rem;
+        transition: background-color 0.25s linear;
+            &:hover {
+                background-color: #212121;
+                color: #fff;
+            }
+    }
+    
+}

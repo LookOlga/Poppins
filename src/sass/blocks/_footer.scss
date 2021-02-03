@@ -1,0 +1,60 @@
+.footer {
+    background-color: $black;
+    min-height: 25rem;
+    margin-top: 8rem;
+    padding: 3rem 0;
+    &__nav {
+        display: flex;
+    }
+    &__social {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__icons {
+        display: flex;
+    }
+    &__slogan {
+        color:#fff;
+        font-weight: 100;
+        font-size: 2.4rem;
+        width: 70%;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+    &__link {
+        color: #f2f2f2;
+        font-weight: 300;
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+            
+        }
+        
+    }
+    &__img {
+        margin-right: 1rem;
+        svg {
+            width: 3rem;
+            height: 3rem; 
+        }
+        &:hover  {
+            svg path {
+                fill: #f4a460;
+            }
+        }
+    }
+    &__rights {
+        color: #fff;
+        font-weight: 300;
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,47 @@
+.open-days {
+    &__wrapper {
+        background-color: $black;
+        padding: 5rem;
+    }
+    &__text {
+        margin-top: 2rem;
+    }
+
+    &__form {
+        margin-top: 5rem;
+        width: 70%;
+        input, textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            padding: 1rem;
+            font-family: inherit;
+            min-width: 22rem;
+            
+        }
+        input {
+            width: calc(50% - 2rem);
+            margin: 0 2rem 2rem 0;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+            margin-top: 3rem;
+        }
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        min-width: 22rem;
+        margin-top: 4rem;
+    }
+    
+}

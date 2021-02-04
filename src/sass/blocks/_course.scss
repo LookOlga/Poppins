@@ -25,9 +25,12 @@
     }
     &__main {
         display: flex;
+        flex-wrap: wrap;
     }
     &__content {
-        width: 70%;
+        width: calc(70% - 5rem);
+        margin: 0 5rem 5rem 0;
+
     }
 
     &__text {
@@ -40,5 +43,14 @@
         list-style-type: disc;
         list-style-position: inside;
         margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 1200px) {
+    .course {
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
     }
 }

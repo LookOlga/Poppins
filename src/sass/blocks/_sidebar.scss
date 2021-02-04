@@ -1,6 +1,6 @@
 .sidebar {
-    width: calc(30% - 5rem);
-    margin-left: 5rem;
+    width: 30%;
+    min-width: 28rem;
     &__title {
         font-size: 2.4rem;
     }
@@ -23,7 +23,6 @@
     &__qty {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         height: 3rem;
         margin-top: 3rem;
         
@@ -54,7 +53,18 @@
     &__buttons {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 3rem;
     }
+    &__button {
+        margin-bottom: 2rem;
+    }
 
+}
+
+@media(max-width: 1200px) {
+    .sidebar {
+        width: 100%;
+        max-width: 35rem;
+    }
 }

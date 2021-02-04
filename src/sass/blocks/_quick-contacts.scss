@@ -1,5 +1,5 @@
 .quick-contacts {
-    margin-top: 8rem;
+    margin-top: 4rem;
     &__links{
         margin-top: 2rem;
     }
@@ -22,17 +22,7 @@
         font-style: normal;
     }
     &__button {
-        border: 0.2rem solid #212121;
-        padding: 1rem;
-        cursor: pointer;
         margin-top: 3rem;
-        line-height: 1;
-        font-size: 1.6rem;
-        transition: background-color 0.25s linear;
-            &:hover {
-                background-color: #212121;
-                color: #fff;
-            }
     }
     
 }

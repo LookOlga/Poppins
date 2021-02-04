@@ -23,10 +23,9 @@
             this.slides = document.querySelectorAll(this.slides);
             this.slider = document.querySelector(this.slider);
             this.wrapper = document.querySelector(this.wrapper);
-            console.log(this.track);
 
             this.track = document.querySelector(this.track);
-            console.log(this.track);
+            
            
             this.calc();
 
@@ -74,8 +73,6 @@
             });
         }
         calc() {
-            console.log(this.track);
-            console.log(this.track.style);
             this.track.style.width = 100 * this.slides.length + '%';
 
             this.width = window.getComputedStyle(this.wrapper).width;
@@ -95,21 +92,38 @@
 
         
     }
-    new Slider({
-        slider: '.portfolio__slider',
-        slides: '.portfolio__slide',
-        wrapper: '.portfolio__slider-wrapper' ,
-        track: '.portfolio__slider-track',
-        pagination: true,
-    }).init();
 
-    let slides = document.querySelectorAll('.blog-post__slide');
-    console.log(slides);
+// const slider = document.querySelectorAll('.portfolio__slider');
+
+//     if(slider.length !== 0 ) 
+//     new Slider({
+//         slider: '.portfolio__slider',
+//         slides: '.portfolio__slide',
+//         wrapper: '.portfolio__slider-wrapper' ,
+//         track: '.portfolio__slider-track',
+//         pagination: true,
+//     }).init();
+
+// const slider2 = document.querySelectorAll('.blog-post__slider');
+
+// if(slider2.length !== 0)
+//     new Slider({
+//         slider: '.blog-post__slider',
+//         slides: '.blog-post__slide',
+//         wrapper: '.blog-post__slider-wrapper' ,
+//         track: '.blog-post__slider-track',
+//         pagination: true,
+//     }).init();
+
+
+const slider = document.querySelectorAll('.slider');
+
+    if(slider.length !== 0 ) 
     new Slider({
-        slider: '.blog-post__slider',
-        slides: '.blog-post__slide',
-        wrapper: '.blog-post__slider-wrapper' ,
-        track: '.blog-post__slider-track',
+        slider: '.slider',
+        slides: '.slide',
+        wrapper: '.slider-wrapper' ,
+        track: '.slider-track',
         pagination: true,
     }).init();
  })

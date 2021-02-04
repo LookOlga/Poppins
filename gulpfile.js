@@ -16,17 +16,19 @@ gulp.task('server', function() {
     browserSync.init({
         server: {
             baseDir: "dist"
-        }
+        },
+        tunnel: true
     });
-    // gulp.watch("src/*.html").on('change', browserSync.reload);
+    // gulp.watch("src/**/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('html', function(done) {
     panini.refresh()
-    gulp.src('src/*.html')
+    gulp.src('src/pages/**/*.html')
+
     .pipe(plumber())
       .pipe(panini({
-        root: 'src/',
+        root: 'src/pages/',
         layouts: 'src/layouts/',
         partials: 'src/partials/',
         helpers: 'src/helpers/',
@@ -56,7 +58,7 @@ gulp.task('styles', function() {
 
 gulp.task ('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel ("styles"));
-    gulp.watch("src/*.html").on("change", gulp.parallel('html'));
+    gulp.watch("src/pages/**/*.html").on("change", gulp.parallel('html'));
     gulp.watch("src/js/**/*.js").on("change", gulp.parallel('scripts'));
     gulp.watch("src/img/**/*").on("change", gulp.parallel('images'));
     gulp.watch("src/fonts/**/*").on("change", gulp.parallel('fonts'));

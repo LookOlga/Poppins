@@ -96,33 +96,11 @@
     }
     
     &__link {
-        padding: 1rem;
         color: #fff;
         position: relative;
-        line-height: 2.4rem;
         font-size: 2rem;
-        &::before, &::after {
-            content: '';
-            position: absolute;
-            transition: transform .7s ease;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border-style: solid;
-            border-color:  #fff;
-        }
-        &::before {
-            border-width: 0.2rem 0 0.2rem 0;
-            transform: scaleX(0);
-        }
-        &::after {
-            border-width: 0 0.2rem 0 0.2rem ;
-            transform: scaleY(0);
-        }
-
-        &:hover::before, &:hover::after{
-            transform: scale(1,1);
+        &:hover {
+            text-decoration: underline;
         }
     }
 

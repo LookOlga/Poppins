@@ -36,14 +36,16 @@
         color: #212121;
         span {
             position: relative;
-            margin-left: 0.5rem;
+            margin-left: 0.8rem;
             &::after {
-                content: '\1F812';
+                content: '';
+                background: url('../img/icons/right-arrow.svg') center center/cover no-repeat;
                 position: absolute;
-                top: -50%;
+                top: 0;
                 left: 0;
-                font-size: 3rem;
-                color: #212121;
+                display: block;
+                width: 2.2rem;
+                height: 2.2rem;
             }
         }
         &:hover span::after {

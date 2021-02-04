@@ -3,6 +3,7 @@
     font-weight: 600;
     transition: background-color 0.2s linear;
     line-height: 1;
+    min-width: 16rem;
     cursor: pointer;
     font-size: 1.4rem;
     &--yellow {
@@ -33,7 +34,7 @@
 .btn-back {
     color: $font-color;
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     span {
         position: relative;

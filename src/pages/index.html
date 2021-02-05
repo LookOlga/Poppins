@@ -223,12 +223,12 @@ title: Poppins | The School of Photography
             Just write to us that you want to attend the Open Days!   
             </p>
 
-            <form action="#" class="open-days__form">
+            <form action="#" autocomplete="off" class="open-days__form">
                <div class="open-days__inputs">
-                    <input class="open-days__input" name="name"  placeholder="Name" type="text">
-                    <input class="open-days__input" name="email" placeholder="Email" type="text">
+                    <input class="open-days__input input" name="name"  placeholder="Name" type="text" required>
+                    <input class="open-days__input input" name="email" placeholder="Email" type="text" required>          
                </div>
-                <textarea class="open-days__textarea" placeholder="Message" rows="1"></textarea>
+                <textarea class="open-days__textarea textarea" placeholder="Message" rows="1" required></textarea>
                 <button class="button button--white open-days__button" type="submit">Send</button>
             </form>
         </div>

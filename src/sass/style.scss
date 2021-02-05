@@ -44,8 +44,10 @@ section:not(.intro){
 
 @import 'base/variables';
 @import 'base/text';
-@import 'base/animatiom';
 @import 'base/buttons';
+@import 'base/form';
+@import 'base/animation';
+
 
 @import 'blocks/slider';
 @import 'blocks/header';

@@ -10,27 +10,23 @@
     &__form {
         margin-top: 5rem;
         width: 70%;
-        input, textarea {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #fff;
-            padding: 1rem;
-            font-family: inherit;
-            min-width: 22rem;
-            
+        color: #fff;
+    
+    }
+
+    &__input {
+        width: calc(50% - 2rem);
+        margin: 0 2rem 2rem 0;
+        color: inherit;
+        &:last-child{
+            margin-right: 0;
         }
-        input {
-            width: calc(50% - 2rem);
-            margin: 0 2rem 2rem 0;
-            &:last-child{
-                margin-right: 0;
-            }
-        }
-        textarea {
-            width: 100%;
-            resize: none;
-            margin-top: 3rem;
-        }
+    }
+
+    &__textarea {
+        margin-top: 3rem;
+        width: 100%;
+        color: inherit;
     }
 
     &__inputs {
@@ -38,6 +34,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
+    
 
     &__button {
         min-width: 22rem;

@@ -31,6 +31,7 @@
 
         &--img {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 3rem;
@@ -44,7 +45,7 @@
 
     &__photo {
         width: 30%;
-
+        min-width: 20rem;
         &--100 {
             width: 100%;
             text-align: center;
@@ -60,7 +61,7 @@
     }
 
     &__text {
-        margin-top: 2rem;
+        margin: 2rem 0 4rem 0;
     }
 
     &__label {
@@ -105,5 +106,21 @@
 
     &__slider {
         margin-top: 5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .blog-post {
+        &__photo {
+            width: 75%;
+        }
+        &__review {
+            width:100%;
+        }
+        &__article {
+            &--img {
+                justify-content: center;
+            }
+        }
     }
 }

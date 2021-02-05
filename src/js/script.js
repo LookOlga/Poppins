@@ -2,9 +2,16 @@
 
  window.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.header__burger');
+    const link = document.querySelectorAll('.header__link');
 
     burger.addEventListener('click', () => {
         document.body.classList.toggle('menu-active');
+    })
+
+    link.forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.classList.toggle('menu-active');
+        })
     })
 
     class Slider {
@@ -90,30 +97,7 @@
             return +str.replace(/\D/g, '');
         }
 
-        
     }
-
-// const slider = document.querySelectorAll('.portfolio__slider');
-
-//     if(slider.length !== 0 ) 
-//     new Slider({
-//         slider: '.portfolio__slider',
-//         slides: '.portfolio__slide',
-//         wrapper: '.portfolio__slider-wrapper' ,
-//         track: '.portfolio__slider-track',
-//         pagination: true,
-//     }).init();
-
-// const slider2 = document.querySelectorAll('.blog-post__slider');
-
-// if(slider2.length !== 0)
-//     new Slider({
-//         slider: '.blog-post__slider',
-//         slides: '.blog-post__slide',
-//         wrapper: '.blog-post__slider-wrapper' ,
-//         track: '.blog-post__slider-track',
-//         pagination: true,
-//     }).init();
 
 
 const slider = document.querySelectorAll('.slider');

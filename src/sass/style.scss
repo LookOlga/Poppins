@@ -1,55 +1,10 @@
-html {
-    font-size: 10px;
-}
-*, *:before, *:after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #1b1b21;
-    position: relative;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-button {
-    border: 0;
-    outline: 0;
-    background: transparent;
-}
-
-section:not(.intro){
-    margin-top: 10rem;
-}
-.container {
-    max-width: 120rem;
-    padding: 0 2rem;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
 @import 'base/variables';
 @import 'base/text';
 @import 'base/buttons';
 @import 'base/form';
+@import 'base/slider';
 @import 'base/animation';
 
-
-@import 'blocks/slider';
 @import 'blocks/header';
 @import 'blocks/open-days';
 @import 'blocks/intro';
@@ -61,3 +16,54 @@ section:not(.intro){
 @import 'blocks/blogs';
 @import 'blocks/blog-post';
 @import 'blocks/footer';
+
+html {
+    font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #1b1b21;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+section:not(.intro) {
+    margin-top: 10rem;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
